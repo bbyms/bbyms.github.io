@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <head>
     <title>Barbara Mendes</title>
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Front-End, Front End, Development, Web">
 <meta name="description" content="Barbara Mendes website">
@@ -11,21 +12,7 @@
 
 <link rel="icon" sizes="16x16" href="/favicon/favicon.ico">
 
-<!-- Google Fonts -->
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Montserrat::latin', 'Merriweather:400,400italic,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
+<!-- Typekit Fonts -->
 
 <script src="https://use.typekit.net/rmk3ply.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -33,24 +20,70 @@
   </head>
   <body>
     <header>
-  <div class="header__container">
-    <a href="/" class="header__title">Barbara Mendes</a>
+  <div class="header-container">
+    <a href="/" class="header-title">Barbara Mendes</a>
+    <p class="about__main-desc">
+      Here I try to recreate several magazines layout on the web with CSS only.
+      This is not about design, I don't translate the magazines layout to the web, I just plainly copy them and I don't use real content.
+    </p>
   </div>
-  <nav>
-    <ul class="global-nav">
-      <li class="global-nav__item"> <a href="/about">About</a></li>
-      <li class="global-nav__item"> <a href="http://twitter.com/bbyms">Twitter</a></li>
-    </ul>
-  </nav>
 </header>
 
     <main>
-      <h1 class="about__title">About</h1>
-<p class="about__main-desc">
-  Here I try to recreate several magazines layout on the web with CSS only.
-  This is not about design, I don't translate the magazines layout to the web, I just plainly copy them and I don't use real content.
-  Checkout my first attempt <a href="/toc">here</a>
-</p>
+      <section class="table-of-contents">
+  <h1>Contents</h1>
+  <section class="table-of-contents--items">
+    
+          <div>
+            <h2>4</h2>
+            <p>Editor&#39;s note</p>
+            <p class="red">-- Lorem ipsum</p>
+          </div>
+    
+          <div>
+            <h2>32</h2>
+            <p>Lorem ipsum</p>
+            <p class="red">Observed</p>
+          </div>
+    
+          <div>
+            <h2>64</h2>
+            <p>Editor&#39;s note</p>
+            <p class="red">-- Digilantes</p>
+          </div>
+    
+          <div>
+            <h2>32</h2>
+            <p>Step out of line, and it might soon be known online</p>
+            <p class="red">-- Artisanal Arms</p>
+          </div>
+    
+          <div>
+            <h2>32</h2>
+            <p>Lorem ipsum</p>
+            <p class="red">Observed</p>
+          </div>
+    
+          <div>
+            <h2>64</h2>
+            <p>Editor&#39;s note</p>
+            <p class="red">-- Digilantes</p>
+          </div>
+    
+          <div>
+            <h2>32</h2>
+            <p>Step out of line, and it might soon be known online</p>
+            <p class="red">-- Artisanal Arms</p>
+          </div>
+    
+          <div>
+            <h2>06</h2>
+            <p>From the Makery</p>
+            <p class="red">-- Lorem Ipsum</p>
+          </div>
+    
+  </section>
+</section>
     </main>
     <footer></footer>
 
