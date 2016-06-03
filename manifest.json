@@ -1,0 +1,16 @@
+{
+  "name": "bbyms",
+  "short_name": "bbyms",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#a67587",
+  "background-color": "#fff",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
