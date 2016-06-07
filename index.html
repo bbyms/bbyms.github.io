@@ -8,7 +8,7 @@
 <meta name="description" content="Barbara Mendes website">
 <meta name="author" content="Barbara Mendes">
 
-<meta name="theme-color" content="#a67587">
+<meta name="theme-color" content="#30499b">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -17,8 +17,6 @@
 <link rel="icon" sizes="16x16" href="/favicon/favicon.png">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-<link href="/css/palette.css" rel="stylesheet">
 
 <!-- Typekit Fonts -->
 
@@ -47,7 +45,7 @@
 </script>
 
   </head>
-  <body>
+  <body class="home">
     <header>
   <div class="header-container">
     <a href="/" class="header-title">Hi! I'm Barbara.</a>
@@ -58,58 +56,35 @@
 </header>
 
     <main>
-      <section class="table-of-contents">
-  <h1>Magazine layouts on the web</h1>
-  <section class="table-of-contents--items">
-    
-          <div>
-            <h2>1</h2>
-            <p>The Whale as a Dish</p>
-            <a href="/samples/april14.html" class="red">-- April 14th 2016</a>
-          </div>
-    
-          <div>
-            <h2>2</h2>
-            <p>A few miles south of Soledad</p>
-            <a href="/samples/april15.html" class="red">-- April 15th 2016</a>
-          </div>
-    
-          <div>
-            <h2>3</h2>
-            <p>Great Chicago glowed red before our eyes.</p>
-            <a href="/samples/april16.html" class="red">-- April 16th 2016</a>
-          </div>
-    
-          <div>
-            <h2>4</h2>
-            <p>Once California belonged to Mexico</p>
-            <a href="/samples/april17.html" class="red">-- April 17th 2016</a>
-          </div>
-    
-          <div>
-            <h2>5</h2>
-            <p>The moon was on the cover of Life magazine</p>
-            <a href="/samples/may2.html" class="red">-- May 2nd 2016</a>
-          </div>
-    
-          <div>
-            <h2>6</h2>
-            <p>In the Cordova Hotel, near the docks of Barcelona</p>
-            <a href="/samples/may7.html" class="red">-- May 7th 2016</a>
-          </div>
-    
-          <div>
-            <h2>7</h2>
-            <p>April is the cruellest month</p>
-            <a href="/samples/may8.html" class="red">-- May 8th 2016</a>
-          </div>
-    
-  </section>
-</section>
+      <svg class="defs-only">
+<filter id="duotone" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+  <feColorMatrix type="matrix" values="0.95 0 0 0  0.05
+            0.65 0 0 0  0.15
+            0.15 0 0 0  0.50
+              0  0 0 1  0"/>
+</filter>
+</svg>
+<div class="home-container">
+  <div class="snippet">
+    <figure>
+      <img src="/img/may8.jpg" alt="Photo of the printed magazine layout for May 8th">
+    </figure>
+    <a href="/magazine" class="title">Magazine layouts on the web</a>
+    <p>I collect several magazine layouts and recreate them with css.</p>
+  </div>
+
+  <div class="snippet">
+    <figure>
+      <img src="/img/lemonade.png" alt="iTunes screenshot of the album Lemonade with the dominant colours behaviour">
+    </figure>
+    <a href="/palette" class="title">Color palette from image</a>
+    <p>Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background.</p>
+  </div>
+</div>
     </main>
     <footer>
-  <a href="http://twitter.com/bbyms" target="_blank"><i class="fa fa-twitter"></i></a>
-  <script src="js/scripts.js"></script>
+  <a href="http://twitter.com/bbyms" target="_blank" title="follow me on twitter"><i class="fa fa-twitter"></i></a>
+  <script src="/js/scripts.js"></script>
 </footer>
 
   </body>
