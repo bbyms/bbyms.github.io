@@ -14,7 +14,7 @@ self.addEventListener('fetch', event => {
     .then(response => response || fetch(event.request))
     .catch(() => {
         if (event.request.mode == 'navigate') {
-          return caches.match('offline.html');
+          return caches.match('/offline.html');
         }
     })
   );
