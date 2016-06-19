@@ -58,30 +58,50 @@
 </header>
 
     <main>
-      <svg class="defs-only">
-<filter id="duotone" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
-  <feColorMatrix type="matrix" values="0.95 0 0 0  0.05
-            0.65 0 0 0  0.15
-            0.15 0 0 0  0.50
-              0  0 0 1  0"/>
-</filter>
-</svg>
-<div class="home-container">
+      <div class="home-container">
+
   <div class="snippet">
-    <figure>
-      <img src="/img/may8.jpg" alt="Photo of the printed magazine layout for May 8th">
-    </figure>
+    <svg width="320" height="320" viewBox="0 0 600 600">
+      <defs>
+        <filter id="duotone-filter-magazine" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+          <feColorMatrix type="matrix" values="0.7265625 0 0 0 0.1328125 0.48828125 0 0 0 0.21875 0.08984375 0 0 0 0.71484375 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter="url(#duotone-filter-magazine)" xlink:href="img/may8.jpg"/>
+    </svg>
     <a href="/magazine" class="title">Magazine layouts on the web</a>
     <p>I collect several magazine layouts and recreate them with css.</p>
   </div>
 
+  
   <div class="snippet">
-    <figure>
-      <img src="/img/lemonade.png" alt="iTunes screenshot of the album Lemonade with the dominant colours behaviour">
-    </figure>
+    <svg width="320" height="320" viewBox="0 0 600 600">
+      <defs>
+        <filter id="duotone-filter-palette" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+          <feColorMatrix type="matrix" values="0.7265625 0 0 0 0.1328125 0.48828125 0 0 0 0.21875 0.08984375 0 0 0 0.71484375 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter="url(#duotone-filter-palette)" xlink:href="img/palette/img2.jpeg"/>
+    </svg>
     <a href="/palette" class="title">Color palette from image</a>
     <p>Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background.</p>
   </div>
+
+  
+  <div class="snippet">
+    <svg width="320" height="320" viewBox="0 0 600 600">
+      <defs>
+        <filter id="duotone-filter-duotone" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+          <feColorMatrix type="matrix" values="0.7265625 0 0 0 0.1328125 0.48828125 0 0 0 0.21875 0.08984375 0 0 0 0.71484375 0 0 0 1 0"/>
+          </filter>
+        </defs>
+        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter="url(#duotone-filter-duotone)" xlink:href="img/duo.png"/>
+    </svg>
+    <a href="/duo" class="title">Duotone color palette</a>
+    <p>A duotone palette inspired from spotify&#39;s branding</p>
+  </div>
+
+  
 </div>
     </main>
     <footer>
