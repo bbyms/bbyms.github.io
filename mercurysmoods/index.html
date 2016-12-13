@@ -51,7 +51,26 @@
     <main>
       <div class="mercury">
   <img src="/img/mercury.svg" alt="mercury's moods" class="mercury-title">
+  <a href="#post" class="down"><img src="/img/down.svg" alt="Scroll down"></a>
 </div>
+
+<div class="mercury mercury-tint" id="post">
+  <form class="mercury-form" action="index.html" method="post" enctype="application/json">
+    <label for="mood">In the mood for:</label>
+    <textarea name="description" rows="6" cols="40"></textarea>
+    <button type="button" name="button" type="submit">Send</button>
+  </form>
+  <a href="#mood" class="down"><img src="/img/down.svg" alt="Scroll down"></a>
+</div>
+
+
+  <div class="mercury" id="mood">
+    <p class="mercury-mood">And as he lay there, one moment the wild laughter of triumph would convulse him, rising up from somewhere deep within, and his heart would stop, aching with an expansive joy and hope he</p>
+  </div>
+
+  <div class="mercury" id="mood">
+    <p class="mercury-mood">In the old days, if someone had a secret they didn&#39;t want to share... you know what they did? They went up a mountain, found a tree, carved a hole in it, and whispered the secret into the hole</p>
+  </div>
     </main>
     <footer>
   <a href="http://twitter.com/bbyms" target="_blank" title="follow me on twitter" class="twitter"><i class="fa fa-twitter"></i></a>
