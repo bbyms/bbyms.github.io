@@ -91,6 +91,52 @@
 
 
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script type="text/javascript">
+  var config = {
+    apiKey: "AIzaSyCJWQmoCD_vMRFTjyvoT_e2wJWa-EqoezA",
+    authDomain: "mercurys-moods.firebaseapp.com",
+    databaseURL: "https://mercurys-moods.firebaseio.com",
+    storageBucket: "mercurys-moods.appspot.com",
+    messagingSenderId: "1046928800005"
+  };
+
+  firebase.initializeApp(config);
+
+  let rootRef = firebase.database().ref('quotes');
+  let updatingDatabase = false;
+  let readingFromDatabase = false;
+  let database = {};
+  let quotes = [];
+
+  updateDatabaseRealtime();
+
+  function updateDatabaseRealtime() {
+      rootRef.on('value', function (snapshot) {
+          console.log("Update to firebase detected. Trying to update bot database.");
+          while (readingFromDatabase) { }
+          updatingDatabase = true;
+          database = snapshot.val();
+          updatingDatabase = false;
+          console.log("Database updated.");
+
+          let teste = database['quotes'];
+          console.log("quotes " + database);
+
+          $('#getQuote').text(database);
+      });
+  }
+
+  function writeUserData() {
+    var message = $('#quoteValue').val();
+
+    console.log(message);
+    rootRef.set({
+      0: message
+    });
+  }
+  </script>
 </footer>
 
 </body>
