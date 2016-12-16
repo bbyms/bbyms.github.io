@@ -23,11 +23,22 @@ $(function() {
 
 var formData = JSON.stringify($("#post").serializeArray());
 
-$.ajax({
-  type: "POST",
-  url: "quote.html",
-  data: formData,
-  success: function(){},
-  dataType: "json",
-  contentType : "application/json"
-});
+// $.ajax({
+//   type: "POST",
+//   url: "quote.html",
+//   data: formData,
+//   success: function(){},
+//   dataType: "json",
+//   contentType : "application/json"
+// });
+
+// Initialize Firebase
+// var config = {
+//   apiKey: "AIzaSyCJWQmoCD_vMRFTjyvoT_e2wJWa-EqoezA",
+//   authDomain: "mercurys-moods.firebaseapp.com",
+//   databaseURL: "https://mercurys-moods.firebaseio.com",
+//   storageBucket: "mercurys-moods.appspot.com",
+//   messagingSenderId: "1046928800005"
+// };
+//
+// firebase.initializeApp(config);
