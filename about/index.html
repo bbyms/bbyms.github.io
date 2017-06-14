@@ -142,3 +142,22 @@
 
   </body>
 </html>
+quotes " + database);
+
+          $('#getQuote').text(database);
+      });
+  }
+
+  function writeUserData() {
+    var message = $('#quoteValue').val();
+
+    console.log(message);
+    rootRef.set({
+      0: message
+    });
+  }
+  </script>
+</footer>
+
+  </body>
+</html>
