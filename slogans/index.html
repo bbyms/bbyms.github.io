@@ -83,35 +83,59 @@
 
   
     <div class="snippet">
-      <button class="btn" onclick="play('justica')">justiça</button>
-      <audio id="justica" src="/audio/justica.wav"></audio>
-      <!-- <a href="/slogans/justica.html" class="red"></a> -->
-    </div>
-  
-    <div class="snippet">
-      <button class="btn" onclick="play('mudanca')">mudança</button>
-      <audio id="mudanca" src="/audio/mudanca.wav"></audio>
-      <!-- <a href="/slogans/mudanca.html" class="red"></a> -->
-    </div>
-  
-    <div class="snippet">
-      <button class="btn" onclick="play('futuro')">futuro</button>
-      <audio id="futuro" src="/audio/futuro.wav"></audio>
-      <!-- <a href="/slogans/futuro.html" class="red"></a> -->
-    </div>
-  
-    <div class="snippet">
       <button class="btn" onclick="play('confianca')">confiança</button>
-      <audio id="confianca" src="/audio/confianca.wav"></audio>
-      <!-- <a href="/slogans/confianca.html" class="red"></a> -->
+      <audio id="confianca" src="/audio/confianca.wav" class="audio"></audio>
     </div>
   
     <div class="snippet">
       <button class="btn" onclick="play('coragem')">coragem</button>
-      <audio id="coragem" src="/audio/coragem.wav"></audio>
-      <!-- <a href="/slogans/coragem.html" class="red"></a> -->
+      <audio id="coragem" src="/audio/coragem.wav" class="audio"></audio>
     </div>
   
+    <div class="snippet">
+      <button class="btn" onclick="play('estabilidade')">estabilidade</button>
+      <audio id="estabilidade" src="/audio/estabilidade.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('futuro')">futuro</button>
+      <audio id="futuro" src="/audio/futuro.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('justica')">justiça</button>
+      <audio id="justica" src="/audio/justica.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('lutar')">lutar</button>
+      <audio id="lutar" src="/audio/lutar.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('seriedade')">seriedade</button>
+      <audio id="seriedade" src="/audio/seriedade.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('solidariedade')">solidariedade</button>
+      <audio id="solidariedade" src="/audio/solidariedade.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('trabalho')">trabalho</button>
+      <audio id="trabalho" src="/audio/trabalho.wav" class="audio"></audio>
+    </div>
+  
+    <div class="snippet">
+      <button class="btn" onclick="play('verdade')">verdade</button>
+      <audio id="verdade" src="/audio/verdade.wav" class="audio"></audio>
+    </div>
+  
+
+  <div class="snippet snippet-center">
+    <button class="btn btn-lg" onclick="playAll()">Chavão aleatório</button>
+  </div>
 
 </div>
 
@@ -120,7 +144,28 @@
   function play(name) {
     var audio = document.getElementById(name);
     audio.play();
-    console.log(name);
+  }
+
+  function playAll() {
+    var audio = document.getElementsByClassName('audio');
+
+    var a = Math.floor((Math.random() * 9) + 1);
+    var b = Math.floor((Math.random() * 9) + 1);
+    var c = Math.floor((Math.random() * 9) + 1);
+
+    var all = new Array(audio[a], audio[b], audio[c]);
+
+    console.log(a, b, c);
+
+    var i = -1;
+    playSnd();
+
+    function playSnd() {
+        i++;
+        if (i == all.length) return;
+        all[i].addEventListener('ended', playSnd);
+        all[i].play();
+    }
   }
 </script>
     </main>
