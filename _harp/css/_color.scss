@@ -1,0 +1,71 @@
+$lightgrey: #f5f5f5;
+$blue: #05d;
+$black: #222;
+$dimgrey: #737373;
+$red: #ff3b3a;
+$grey: #333;
+$white: #fff;
+$pink: #a67587;
+$light-pink: #c3aab0;
+$dim-white: rgba(255, 255, 255, .3);
+$dark-bg: #11161c;
+
+$primary: #30499b;
+$secondary: #f0a32f;
+
+$accent: #30499b;
+$accent--lighter:  mix($dimgrey, $accent, 30%);
+$body: #222;
+
+// primary palette
+:root {
+  --background: $primary;
+  --foreground: $white;
+  --font-family: 'Raleway', sans-serif;
+  --hover: $black;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --background: #2D0261;
+    --foreground: $white;
+    --font-family: 'Merriweather', sans-serif;
+    --hover: #795e9a;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --background: #BC1846;
+    --foreground: $white;
+    --font-family: 'Kanit', sans-serif;
+    --hover: #ff9b54;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --background: #C6202F;
+    --foreground: $white;
+    --font-family: 'Paytone One', sans-serif;
+    --hover: #da717a;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  :root {
+    --background: #0D12B1;
+    --foreground: $white;
+    --font-family: 'Montserrat Subrayada', sans-serif;
+    --hover: #FDC500;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --background: #7D4282;
+    --foreground: $white;
+    --font-family: 'Montserrat Subrayada', sans-serif;
+    --hover: #5B0F50;
+  }
+}

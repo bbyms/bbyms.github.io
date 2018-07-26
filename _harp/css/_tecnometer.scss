@@ -1,0 +1,15 @@
+.tecnometer {
+  padding: 40px;
+
+  #steps {
+    fill: url('#tempGradient');
+  }
+
+  #temperature {
+    fill: url('#tempGradient');
+  }
+
+  #pointer {
+    fill: rgb(30,59,191);
+  }
+}

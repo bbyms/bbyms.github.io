@@ -1,0 +1,55 @@
+.may7 {
+  background-color: $dark-bg;
+  background-image: url('../img/light_dark.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet {
+    background-position: -100px 0;
+  }
+
+  main {
+    box-sizing: border-box;
+
+    @include desktop {
+      float: right;
+      padding-right: 60px;
+      padding-top: 0;
+      width: 35%;
+    }
+
+    @include tablet {
+      float: right;
+      padding-right: 60px;
+      padding-top: 0;
+      width: 50%;
+    }
+
+    p {
+      @extend %type--serif;
+      text-indent: 20px;
+    }
+
+    .white {
+      color: $white;
+    }
+
+    .margin {
+      margin-bottom: 30px;
+    }
+
+    p:first-child {
+      text-indent: 0;
+
+      &::first-letter {
+        @extend %type--sans;
+        float: left;
+        font-size: 7rem;
+        margin-bottom: -1px;
+        margin-right: 10px;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

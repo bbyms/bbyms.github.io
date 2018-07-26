@@ -1,0 +1,30 @@
+.home {
+  .header-container {
+    background: var(--background);
+
+    #logo {
+      fill: $white;
+    }
+  }
+
+  .header-title {
+    color: var(--foreground);
+
+    &:hover {
+      opacity: .7;
+
+      #logo {
+        opacity: .7;
+      }
+    }
+  }
+
+  .header-title,
+  p {
+    color: var(--foreground);
+  }
+
+  main {
+    background-color: var(--background);
+  }
+}
